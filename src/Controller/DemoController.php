@@ -16,4 +16,14 @@ class DemoController extends Controller
             'controller_name' => 'DemoController',
         ]);
     }
+
+    /**
+     * @Route("/", name="acceuil")
+     */
+    public function rendIT()
+    {
+        return $this->render('demo/index.html.twig', [
+            'controller_name' => 'DemoController',
+        ]);
+    }
 }
