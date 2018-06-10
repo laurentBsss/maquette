@@ -5,3 +5,5 @@ easy_admin:
 #        - App\Entity\Category
 #        - App\Entity\User
     site_name: 'Maquette'
+    design:
+        brand_color: '#1ABC9C'
