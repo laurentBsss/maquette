@@ -29,7 +29,7 @@ class Post
     /**
      * @ORM\Column(type="datetime")
      */
-    private $created_at;
+    public $created_at;
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
