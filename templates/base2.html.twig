@@ -8,28 +8,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<title>{% block title %}Welcome!{% endblock %}</title>
-	{% block stylesheets %}
-	<style type="text/css">
-    .blog-header {
-   		line-height: 1;
-   		border-bottom: 1px solid #e5e5e5;
-    }
-    .rendezvous{
-
-    }
-
-    .call-phone {
-
-        padding-left: 14%;
-
-    }
-    </style>
-	{% endblock %}
+	{% block stylesheets %}{% endblock %}
 </head>
 <body>
 	<div class="container">
 
-	{#	<!-- nav  here -->
+		<!-- nav  here -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">Maquette</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,51 +49,14 @@
 				</form>
 				<a class="nav-item" href="#">Mon compte</a>
 			</div>
-		</nav>  #}
-		<header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <p class="call-phone font-weight-bold">01 01 01 01 01</p>
-            
-            <a class="navbar-brand btn btn-info btn-lg" href="#">Prendre rendez-vous</a> 
-          </div>
-          <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Logo ici</a>
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="text-muted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-            </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Mon compte</a>
-          </div>
-        </div>
-      </header>
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="#">Le centre</a>
-          <a class="p-2 text-muted" href="#">Soin 1</a>
-          <a class="p-2 text-muted" href="#">Soin 2</a>
-          <a class="p-2 text-muted" href="#">Soin 3</a>
-          <a class="p-2 text-muted" href="#">Soin 4</a>
-          <a class="p-2 text-muted" href="#">Soin 5</a>
-          <a class="p-2 text-muted" href="#">Soin 6</a>
-          <a class="p-2 text-muted" href="#">Soin 7</a>
-          <a class="p-2 text-muted" href="#">Soin 8</a>
-          <a class="p-2 text-muted" href="#">Soin 9</a>
-          <a class="p-2 text-muted" href="#">Soin 10</a>
-          <a class="p-2 text-muted" href="#">Tarifs</a>
-        </nav>
-      </div>
+		</nav>
 		<!-- Content here -->
 		{% block body %}{% endblock %}
 		<!-- gmap data ici -->
 		<div class="row">
 			<div class="col-12 col-md">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5051705045576!2d2.3600131510777023!3d48.86764557918668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0f336f344f%3A0x76b4207e18582f2d!2s21+Place+de+la+R%C3%A9publique%2C+75003+Paris!5e0!3m2!1sfr!2sfr!4v1529616147110" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  
-	       
-	        
-	         </div>
-
+                    <h1>Gmap infomations ici</h1>
+	        </div>
 		</div>
 
 		<!-- footer content -->
