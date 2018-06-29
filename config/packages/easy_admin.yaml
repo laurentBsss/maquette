@@ -1,17 +1,24 @@
+parameters:
+    image_form_type:            'Vich\UploaderBundle\Form\Type\VichImageType'
+    file_form_type:             'Vich\UploaderBundle\Form\Type\VichFileType'
+
 easy_admin:
     entities:
         # List the entity class name you want to manage
         Post:
             class: App\Entity\Post
-            label: 'Customers'
+            label: 'Post'
             list:
-                title: "Most recent post"
+                title: "Posts les plus recents"
             form:
                 fields:
                     - { property: 'title' }
                     - { property: 'content', type: 'FOS\CKEditorBundle\Form\Type\CKEditorType' }
                     - { property: 'created_at' }
                     - { property: 'updated_at' }
+                    - { property: 'imageFile', type: 'Vich\UploaderBundle\Form\Type\VichImageType', base_path: '/public/images/post' , label: 'Upload file'}
+ 
+
         #- App\Entity\Post
         #Post:
         #    - App\Entity\Post
